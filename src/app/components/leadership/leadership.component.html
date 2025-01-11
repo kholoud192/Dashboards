@@ -1,0 +1,101 @@
+<div class="grid grid-rows-3 gap-5 border justify-center pt-7 ">
+    <div class="grid grid-cols-5 gap-1 main-row">
+        <div class="bg-white text-center content-center items-center justify-center col1">
+            <h2 class="text-center p-1">رعاية</h2>
+            <p class="text-center p-1">اجمالي عدد الحالات</p>
+            <h3 class="text-center p-1">{{careData.totalcare}}</h3>
+            <a routerLink="/care" class="text-center"><button  class="p-1 text-center">المزيد<i class="fa-solid fa-arrow-left"></i></button></a>
+        </div>
+        <div class=" bg-white text-center content-center items-center justify-center "><div class="pie-chart"><div class="pie-chart-inner">{{careData.calculatedValue}}</div></div>
+            <p class="text-center p-1">الموافق عليها</p>
+        </div>
+        <div class=" bg-white text-center content-center items-center justify-center">
+            <div class="pie-chart-remaining">
+                <div class="pie-chart-inner">{{careData.remainingValue}}</div>
+            </div>
+            <p class="text-center p-1">المتبقية</p>
+        </div>
+        <div class="col-span-2 bg-white text-center content-center items-center flex col4 justify-around ">
+            <div class="self-center text-center">
+                <h2 style="font-size: 20px; " >الحالات المنجزة</h2>
+            </div>
+            <div class="pie-chart-total">
+                <div class="pie-chart-total-inner"><div>
+                    <p>علي الوقت</p>
+                    <h3 class="ontime">83%</h3>
+                    <hr>
+                    <p>مع تأخير</p>
+                    <h3 class="late">17%</h3>
+                </div></div>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-5 gap-1 main-row">
+        <div class="bg-white text-center content-center items-center justify-center col1">
+            <h2 class="text-center p-1">مرسال</h2>
+            <p class="text-center p-1">اجمالي عدد الكتب</p>
+            <h3 class="text-center p-1">{{bookData.totalbook}}</h3>
+            <a routerLink="/care" class="text-center"><button  class="p-1 text-center">المزيد<i class="fa-solid fa-arrow-left"></i></button></a>
+        </div>
+        <div class="col-span-2 flex justify-between bg-white">
+            <div class=" bg-white text-center content-center items-center justify-center  border border-l"><div class="pie-chart-incoming"><div class="pie-chart-inner">{{bookData.incomeValue}}</div></div>
+                <p class="text-center p-1">الكتب الواردة</p>
+            </div >
+            <div class=""></div>
+            <div class=" bg-white text-center content-center items-center justify-center border border-l"><div class="pie-chart-outgoing"><div class="pie-chart-inner">{{bookData.outgoingValue}}</div></div>
+                <p class="text-center p-1">الكتب الصادرة</p>
+            </div >
+            <div class=" bg-white text-center content-center items-center justify-center border border-l">
+                <div class="pie-chart-interior">
+                    <div class="pie-chart-inner">{{bookData.interiorValue}}</div>
+                </div>
+                <p class="text-center p-1">الكتب الداخلية</p>
+            </div>
+        </div>
+        <div class="col-span-2 bg-white text-center content-center items-center flex col4 justify-around">
+            <div  class="self-center text-center">
+                <h2 style="font-size: 20px;  ">الحالات المنجزة</h2>
+            </div>
+            <div class="pie-chart-total">
+                <div class="pie-chart-total-inner"><div>
+                    <p>علي الوقت</p>
+                    <h3 class="ontime">83%</h3>
+                    <hr>
+                    <p>مع تأخير</p>
+                    <h3 class="late">17%</h3>
+                </div></div>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-5 gap-1 main-row">
+        <div class="bg-white text-center content-center items-center justify-center col1">
+            <h2 class="text-center p-1">موارد</h2>
+            <p class="text-center p-1">اجمالي عدد الطلبات</p>
+            <h3 class="text-center p-1">{{resourcesData.totalresource}}</h3>
+            <a routerLink="/care" class="text-center"><button  class="p-1 text-center">المزيد<i class="fa-solid fa-arrow-left"></i></button></a>
+        </div>
+        <div class=" bg-white text-center content-center items-center justify-center "><div class="pie-chart-specialization"><div class="pie-chart-inner">{{resourcesData.specializationValue}}</div></div>
+            <p class="text-center p-1">الطلبات التخصصية</p>
+        </div>
+        <div class=" bg-white text-center content-center items-center justify-center">
+            <div class="pie-chart-radio">
+                <div class="pie-chart-inner">{{resourcesData.radioValue}}</div>
+            </div>
+            <p class="text-center p-1">الطلبات الاذاعية</p>
+        </div>
+        <div class="col-span-2 bg-white text-center content-center items-center justify-around flex col4">
+            <div  class="self-center text-center">
+                <h2 style="font-size: 20px; ">الحالات المنجزة</h2>
+            </div>
+            <div class="pie-chart-total">
+                <div class="pie-chart-total-inner"><div>
+                    <p>علي الوقت</p>
+                    <h3 class="ontime">83%</h3>
+                    <hr>
+                    <p>مع تأخير</p>
+                    <h3 class="late">17%</h3>
+                </div></div>
+            </div>
+        </div>
+    </div>
+</div>

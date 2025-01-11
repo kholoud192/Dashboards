@@ -1,0 +1,221 @@
+.main-row{
+    width: 100%;
+    height: 390px;
+    border-radius: 10px;
+}
+#myAreaChart,#myAreaChart2 {
+    width: 505.1px;
+    height: 168.9px;
+}
+button{
+    width: 112px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #F5F7FA;
+    color: #012D6A;
+}
+button:hover{
+    background-color: #012D6A;
+    color: #F5F7FA;
+}
+h1{
+    font-size: 18px;
+    color: #012D6A;
+    font-weight: bold;
+}
+h3{
+    font-size: 27px;
+    font-weight: bold;
+    color: #012D6A;
+}
+
+.pie-chart-total {
+    position: relative;
+    width: 232.8px; /* حجم الدائرة */
+    height: 232.9px;
+    border-radius:100%;
+    border: white 5px solid;
+    background: conic-gradient(
+        #012D6A 0% 83%, 
+        #BB3837 84% 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+.pie-chart-total-inner {
+    position: absolute;
+    width: 202px; 
+    height: 202px;
+    background: white; 
+    border-radius: 50%;
+    display: flex;
+    font-size: 29px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ontime{
+    font-size: 29px;
+    color: #012D6A;
+}
+.late{
+    font-size: 29px;
+    color: #BB3837;
+}
+p{
+    font-weight: bold;
+    font-size: 16px;
+    color: #6681A6;
+}
+.sec-row{
+    height: 390px;
+    width: 100%;
+    border-radius: 10px;
+}
+.third-row{
+    height: 390px;
+    width: 100%;
+    border-radius: 10px;
+}
+.pie-chart-1,.pie-chart-2,.pie-chart-3,.pie-chart-4{
+    position: relative;
+    width: 128.5px; 
+    height: 128.6px;
+    border-radius:100%;
+    border: white 5px solid;
+    background: conic-gradient(
+        #012D6A 0% 73%,
+        #F5F7FA 74% 100% 
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pie-chart-2 {
+    background: conic-gradient(
+        #BFA25D 0% 19.5%,
+        #F5F7FA 20.5% 100% 
+    );
+}
+.pie-chart-3 {
+    background: conic-gradient(
+        #BB3837 0% 11%,
+        #F5F7FA 12% 100% 
+    );
+}
+.pie-chart-4 {
+    background: conic-gradient(
+        #85BBD8 0% 18.5%,
+        #F5F7FA 19.5% 100% 
+    );
+}
+.pie-chart-inner,.pie-chart-inner1,.pie-chart-inner2,.pie-chart-inner3 {
+    position: absolute;
+    width: 100px; 
+    height: 100px;
+    background: white; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    font-weight: bold;
+    color: #012D6A;
+}
+.pie-chart-inner1{
+    color: #BFA25D;
+}
+.pie-chart-inner2{
+    color: #BB3837;
+}
+.pie-chart-inner3{
+    color: #85BBD8;
+}
+.border-left{
+    border-left: #ECEDFF 3px solid;
+}
+.myBarChart{
+    height: 320px;
+}
+
+.popup-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F7FA;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .close-btn {
+    background-color: #ff5f5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .close-btn:hover {
+    background-color: #e04444;
+  }
+.fa-x{
+    background-color: white;
+    padding: 1%;
+    color: #BB3837;
+    border-radius: 50%;
+    font-size: x-large;
+}
+.doughnut{
+    width: 373.8px;
+    height: 373.8px;
+}
+h2{
+    color: #012D6A;
+}
+hr{
+    width: 100%;
+    height: 16%;
+    border-top-width: 3px;
+}
+.box{
+    background-color: #F5F7FA;
+    width: 100%;
+    height: 54px;
+}
+.dot1{
+    background-color: #012D6A;
+}
+.progress,.progress1{
+    width: 478.2px;
+    height: 9px;
+}
+.progress1{ background-color: #012D6A;}
+.progress2{ background-color: #012D6A; width: 258.2px;height: 9px;}
+.progress3{background-color: #85BBD8;}
+.prog4{background-color: #D5D5D5;}
+.prog5{background-color: #BA5F37;}
+.prog6{background-color: #BFA25D;}
+.prog7{background-color: #545453;}
+.dot2{background-color: #85BBD8;}
+.dot3{background-color: #D5D5D5;}
+.dot4{background-color: #BA5F37; }
+.dot5{background-color: #BFA25D; }
+.dot6{background-color: #545453; }

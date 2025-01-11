@@ -1,0 +1,20 @@
+<div class="bg-color w-full flex items-center">
+    <div class="image">
+        <img src="assets/123214343.png" class="pr-2">
+    </div>
+    <div class="ml-auto flex items-center">
+      <button 
+        *ngIf="currentPage === 'care'" 
+        class="back-button text-white p-2 rounded-full" 
+        (click)="goBack()">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+    <h1 class="text-white pr-12 w-5/12">
+      {{ currentPage === 'care' ? 'قيادة - رعاية' : 'قيادة' }}
+    </h1>
+    <div class="text-left w-9/12 p-5">
+      <input type="search" class="search" placeholder="بحث">
+    </div>
+  </div>
+  

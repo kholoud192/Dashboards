@@ -1,0 +1,26 @@
+.bg-color{
+    background-color: #012D6A;
+    height: 108px;
+}
+h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+.image img{
+    width: 279px;
+    height: 85px;
+}
+.search{
+    border-radius: 10px;
+    border: 1px white solid;
+    width: 583.8px;
+    height: 54.6px;
+}
+.back-button{
+    background-color: #1B4279;
+    color: white;
+}
+.fa-arrow-right{
+    color: white;
+
+}
