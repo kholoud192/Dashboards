@@ -1,16 +1,17 @@
 .main-row{
     width: 100%;
-    height: 390px;
     border-radius: 10px;
 }
 #myAreaChart,#myAreaChart2 {
-    width: 505.1px;
+    width: 100%;
     height: 168.9px;
 }
+.pop-data{font-size:22px ;}
 button{
     width: 112px;
     height: 35px;
     border-radius: 10px;
+    font-size: 16px;
     background-color: #F5F7FA;
     color: #012D6A;
 }
@@ -31,8 +32,8 @@ h3{
 
 .pie-chart-total {
     position: relative;
-    width: 232.8px; /* حجم الدائرة */
-    height: 232.9px;
+    width: 222.8px; 
+    height: 222.9px;
     border-radius:100%;
     border: white 5px solid;
     background: conic-gradient(
@@ -50,11 +51,9 @@ h3{
     height: 202px;
     background: white; 
     border-radius: 50%;
-    display: flex;
     font-size: 29px;
     align-items: center;
     justify-content: center;
-    
 }
 
 .ontime{
@@ -66,18 +65,17 @@ h3{
     color: #BB3837;
 }
 p{
-    font-weight: bold;
     font-size: 16px;
     color: #6681A6;
 }
 .sec-row{
-    height: 390px;
     width: 100%;
+    height: 390px;
     border-radius: 10px;
 }
 .third-row{
-    height: 390px;
     width: 100%;
+    height: 390px;
     border-radius: 10px;
 }
 .pie-chart-1,.pie-chart-2,.pie-chart-3,.pie-chart-4{
@@ -138,9 +136,6 @@ p{
 .border-left{
     border-left: #ECEDFF 3px solid;
 }
-.myBarChart{
-    height: 320px;
-}
 
 .popup-overlay {
     width: 100%;
@@ -174,12 +169,12 @@ p{
   }
   
   .close-btn:hover {
-    background-color: #e04444;
+    background-color: #012D6A;
   }
 .fa-x{
     background-color: white;
     padding: 1%;
-    color: #BB3837;
+    color: #012D6A;
     border-radius: 50%;
     font-size: x-large;
 }
@@ -190,11 +185,7 @@ p{
 h2{
     color: #012D6A;
 }
-hr{
-    width: 100%;
-    height: 16%;
-    border-top-width: 3px;
-}
+
 .box{
     background-color: #F5F7FA;
     width: 100%;
@@ -204,7 +195,7 @@ hr{
     background-color: #012D6A;
 }
 .progress,.progress1{
-    width: 478.2px;
+    width: 435px;
     height: 9px;
 }
 .progress1{ background-color: #012D6A;}
@@ -219,3 +210,91 @@ hr{
 .dot4{background-color: #BA5F37; }
 .dot5{background-color: #BFA25D; }
 .dot6{background-color: #545453; }
+
+/* @media screen and (max-width:1024px){
+    #myAreaChart,#myAreaChart2 {
+        width: 100%;
+        height: 250.9px;
+    }
+    .pie-chart-total {
+        width: 200.8px; 
+        height: 200.9px;
+    }
+    .pie-chart-total-inner{
+        width: 180px;
+        height: 180px;
+    }
+    .pie-chart-1,.pie-chart-2,.pie-chart-3,.pie-chart-4{
+        width: 108.5px; 
+        height: 108.6px;
+    }
+    .pie-chart-inner,.pie-chart-inner1,.pie-chart-inner2,.pie-chart-inner3 {
+        width: 80px; 
+        height: 80px;
+    }
+}*/
+@media screen and (max-width:430px){
+    #myAreaChart,#myAreaChart2 {
+        width: 100%;
+        height: 70.9px;
+    }
+    .pie-chart-total {
+        width: 130.8px; 
+        height: 130.9px;
+        
+    }
+    .pie-chart-total-inner{
+        width: 110px;
+        height: 110px;
+        font-size: 10px;
+    }
+    .pie-chart-1,.pie-chart-2,.pie-chart-3,.pie-chart-4{
+        width: 55.5px; 
+        height: 55.6px;
+    }
+    .pie-chart-inner,.pie-chart-inner1,.pie-chart-inner2,.pie-chart-inner3 {
+        width: 35px; 
+        height: 35px;
+        font-size: 10px;
+    }
+    hr{
+        width: 40px;
+    }
+    .ontime,.late ,.p,h1,h3,h2{font-size: 15px;}
+    .data{font-size: 8px;}
+    h1{font-size: 8px;}
+    button{
+        width: 80px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .box{
+        background-color: #F5F7FA;
+        width: 235px;
+        height: 54px;
+    }
+    .pop-data{
+        font-size: 12px;
+    }
+    .popup-data{
+        font-size: 12px;
+    }
+    .popup-content {
+        width: 410px;}
+    .popup-overlay {
+        width: 430px;
+        height: 100%;
+    }
+    .doughnut{width: 150px; font-size: 8px;}
+    .progress,.progress1{
+        width: 135px;
+        height: 9px;
+    }
+    .progress2{
+        width: 75px;
+    }
+    .myBarChart{
+        width: 100%;
+
+    }
+} 

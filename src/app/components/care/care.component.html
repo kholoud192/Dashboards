@@ -1,16 +1,15 @@
 <h1 class="text-center " style="font-size: 30px; font-weight: bold;">رعاية</h1>
-<div class="grid grid-cols-3 gap-4 justify-center pt-7 ">
-    <div class="bg-white text-center content-center items-center justify-center col1 main-row m-auto">
+<div class="grid grid-cols-3 gap-2 justify-center pt-7 ">
+    <div class="bg-white text-center content-center items-center justify-center col1 main-row w-1/4">
         <div class=" w-full">
             <h1 class="text-center">اجمالي عدد الحالات</h1>
             <h3 class="text-center">205</h3>
         </div>
-        <div style="width: 100%;" class=" justify-items-center ">
+        <div style="width: 100%; height: auto;" class=" justify-items-center ">
             <canvas id="myAreaChart"></canvas>
-        </div>
-          
+        </div> 
     </div>
-    <div class="bg-white text-center content-center items-center justify-center col1 main-row m-auto">
+    <div class="bg-white text-center content-center items-center justify-center col1 main-row w-1/4">
         <div class=" w-full">
             <h1 class="text-center">اجمالي عدد الحالات</h1>
             <h3 class="text-center">205</h3>
@@ -19,40 +18,40 @@
             <canvas id="myAreaChart2"></canvas>
         </div>
     </div>
-    <div class=" bg-white text-center content-center items-center justify-center col4  main-row m-auto">
+    <div class=" bg-white text-center content-center items-center justify-center col4  main-row w-1/4">
         <div>
             <h1 style="font-size: 20px;" class="text-center">الحالات المنجزة</h1>
         </div>
         <div class="pie-chart-total">
-            <div class="pie-chart-total-inner"><div>
-                <p>علي الوقت</p>
-                <h3 class="ontime">83%</h3>
-                <hr>
-                <p>مع تأخير</p>
-                <h3 class="late">17%</h3>
-            </div></div>
+            <div class="pie-chart-total-inner justify-center  content-center">
+                <p class="text-center">علي الوقت</p>
+                <h3 class="ontime text-center">83%</h3>
+                <hr width="130px" class="m-auto ">
+                <p class="text-center">مع تأخير</p>
+                <h3 class="late text-center">17%</h3>
+            </div>
         </div>
     </div>
 </div>
-<div class="grid grid-cols-2 gap-4 justify-center pt-7  ">
+<div class="grid grid-cols-2 gap-2 justify-center pt-7  ">
     <div class="bg-white text-center content-center items-center justify-center col1 sec-row m-auto ">
         <div class=" w-full">
-            <h1 class="text-center">انواع الحالات</h1>
+            <h1 class="text-center" >انواع الحالات</h1>
             <h3 class="text-center">205</h3>
         </div>
-        <div style="width: 100%;" class=" justify-items-center flex justify-around">
+        <div style="width: 100%;" class=" justify-items-center grid grid-cols-4 justify-around">
             <div class=" bg-white text-center content-center items-center justify-center border-left"><div class="pie-chart-1"><div class="pie-chart-inner">150</div></div>
-            <button (click)="openPopup()" class="text-center p-1">ضائقة</button>
+                <button (click)="openPopup()" class="text-center p-1 ">ضائقة</button>
             </div>
             <div class=" bg-white text-center content-center items-center justify-center border-left "><div class="pie-chart-2"><div class="pie-chart-inner1">40</div></div>
-            <p class="text-center p-1">غارم محبوس</p>
-        </div>
-        <div class=" bg-white text-center content-center items-center justify-center border-left "><div class="pie-chart-3"><div class="pie-chart-inner2">22</div></div>
-            <p class="text-center p-1">غارم</p>   
-        </div>
-        <div class=" bg-white text-center content-center items-center justify-center "><div class="pie-chart-4"><div class="pie-chart-inner3">38</div></div>
-            <p class="text-center p-1">مساعدة شهرية لكبار السن</p>   
-        </div>
+                <p class="text-center p-1 data">غارم محبوس</p>
+            </div>
+            <div class=" bg-white text-center content-center items-center justify-center border-left "><div class="pie-chart-3"><div class="pie-chart-inner2">22</div></div>
+                <p class="text-center p-1 data">غارم</p>   
+            </div>
+            <div class=" bg-white text-center content-center items-center justify-center "><div class="pie-chart-4"><div class="pie-chart-inner3">38</div></div>
+                <p class="text-center p-1 data">مساعدة شهرية لكبار السن</p>   
+            </div>
         </div>
     </div>
     <div class="bg-white text-center content-center items-center justify-center col1  third-row m-auto">
@@ -75,102 +74,102 @@
     <div class="popup-content">
         <h2 class="text-center p-3" style="font-size: 30px;">ضائقة</h2>
         <hr>
-        <div class="flex justify-around">
+        <div class="flex justify-around items-center content-center">
             <div class="doughnut">
                 <div class="flex content-center  justify-around">
                     <h1 class="text-center">انواع طلبات الضائقة</h1>
                     <h3 class="text-center">205</h3>
                 </div>
-                <canvas id="popupDoughnutChart" class="doughnut" style="display: block; box-sizing: border-box;  width: 100%;"></canvas>
+                <canvas id="popupDoughnutChart" class="doughnut" style="display: block; box-sizing: border-box;  "></canvas>
             </div>
-            <div class="grid grid-rows-6 gap-6 ">
+            <div class="grid grid-rows-6 gap-6 pt-12 ">
                 <div class="box flex justify-around ">
                     <div class="w-2 rounded-full dot1 h-2 border-none self-center"></div>
-                    <p class="self-center">مساعدة الزواج</p>
-                    <h3 class="self-center">50</h3>
+                    <p class="self-center popup-data">مساعدة الزواج</p>
+                    <h3 class="self-center pop-data" >50</h3>
                     <div class="self-center ">
                         <div class="p-3 progress text-center flex justify-between ">
                             <div class=" progress1 " ></div>
-                            <h3 class="self-center text-lg">33</h3>
+                            <h1 class="self-center ">33</h1>
                         </div>
                         <div class="p-3 progress text-center flex ">
                             <div class=" progress2" ></div>
-                            <h3 class="self-center text-lg" >27</h3>
+                            <h1 class="self-center" >27</h1>
                         </div>
                     </div>
                 </div>
                 <div class="box flex justify-around ">
                     <div class="w-2 rounded-full dot2 h-2 border-none self-center"></div>
-                    <p class="self-center">مساعدة مسكن</p>
-                    <h3 class="self-center">19</h3>
+                    <p class="self-center popup-data">مساعدة مسكن</p>
+                    <h3 class="self-center pop-data">19</h3>
                     <div class="self-center ">
                         <div class="p-3 progress text-center flex justify-between ">
                             <div class=" progress1 progress3" ></div>
-                            <h3 class="self-center text-lg">33</h3>
+                            <h1 class="self-center ">33</h1>
                         </div>
                         <div class="p-3 progress text-center flex ">
                             <div class=" progress2 progress3" ></div>
-                            <h3 class="self-center text-lg" >27</h3>
+                            <h1 class="self-center " >27</h1>
                         </div>
                     </div>
                 </div>
                 <div class="box flex justify-around ">
                     <div class="w-2 rounded-full dot3 h-2 border-none self-center"></div>
-                    <p class="self-center">مصاريف العلاج</p>
-                    <h3 class="self-center">1</h3>
+                    <p class="self-center popup-data">مصاريف العلاج</p>
+                    <h3 class="self-center pop-data">1</h3>
                     <div class="self-center ">
                         <div class="p-3 progress text-center flex justify-between ">
                             <div class=" progress1 prog4" ></div>
-                            <h3 class="self-center text-lg">33</h3>
+                            <h1 class="self-center ">33</h1>
                         </div>
                         <div class="p-3 progress text-center flex ">
                             <div class=" progress2 prog4" ></div>
-                            <h3 class="self-center text-lg" >27</h3>
+                            <h1 class="self-center " >27</h1>
                         </div>
                     </div>
                 </div>
                 <div class="box flex justify-around ">
                     <div class="w-2 rounded-full dot4 h-2 border-none self-center"></div>
-                    <p class="self-center">مساعدات الدراسة</p>
-                    <h3 class="self-center">30</h3>
+                    <p class="self-center popup-data">مساعدات الدراسة</p>
+                    <h3 class="self-center pop-data">30</h3>
                     <div class="self-center ">
                         <div class="p-3 progress text-center flex justify-between ">
                             <div class=" progress1 prog5" ></div>
-                            <h3 class="self-center text-lg">33</h3>
+                            <h1 class="self-center ">33</h1>
                         </div>
                         <div class="p-3 progress text-center flex ">
                             <div class=" progress2 prog5" ></div>
-                            <h3 class="self-center text-lg" >27</h3>
+                            <h1 class="self-center " >27</h1>
                         </div>
                     </div>
                 </div>
                 <div class="box flex justify-around ">
                     <div class="w-2 rounded-full dot5 h-2 border-none self-center"></div>
-                    <p class="self-center">مشاريع الاسر المنتجة </p>
-                    <h3 class="self-center">25</h3>
+                    <p class="self-center popup-data">مشاريع الاسر المنتجة </p>
+                    <h3 class="self-center pop-data">25</h3>
                     <div class="self-center ">
                         <div class="p-3 progress text-center flex justify-between ">
                             <div class=" progress1 prog6" ></div>
-                            <h3 class="self-center text-lg">33</h3>
+                            <h1 class="self-center ">33</h1>
                         </div>
                         <div class="p-3 progress text-center flex ">
                             <div class=" progress2 prog6" ></div>
-                            <h3 class="self-center text-lg" >27</h3>
+                            <h1 class="self-center" >27</h1>
                         </div>
                     </div>
                 </div>
                 <div class="box flex justify-around ">
                     <div class="w-2 rounded-full dot6 h-2 border-none self-center"></div>
-                    <p class="self-center">مساعدات المقطوعة</p>
-                    <h3 class="self-center">25</h3>
+                    <p class="self-center popup-data">مساعدات المقطوعة</p>
+                    <h3 class="self-center pop-data">25</h3>
                     <div class="self-center ">
                         <div class="p-3 progress text-center flex justify-between ">
                             <div class=" progress1 prog7" ></div>
-                            <h3 class="self-center text-lg">33</h3>
+                            <h1 class="self-center ">33</h1>
                         </div>
                         <div class="p-3 progress text-center flex ">
                             <div class=" progress2 prog7" ></div>
-                            <h3 class="self-center text-lg" >27</h3>
+                            <h1 class="self-center " >27</h1>
                         </div>
                     </div>
                 </div>

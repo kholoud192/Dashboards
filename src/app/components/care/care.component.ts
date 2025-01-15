@@ -10,47 +10,47 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 })
 export class CareComponent {
   chart: any;
-  showPopup: boolean = false; // للتحكم في عرض الـ Popup
+  showPopup: boolean = false;
 
   openPopup() {
     this.showPopup = true;
-    setTimeout(() => this.createDoughnutChart(), 0); // تأخير بسيط لضمان أن العنصر موجود في DOM
+    setTimeout(() => this.createDoughnutChart(), 0); 
   }
 
   closePopup() {
     this.showPopup = false;
     if (this.chart) {
-      this.chart.destroy(); // إزالة الرسم عند إغلاق الـ Popup
+      this.chart.destroy(); 
     }
   }
 
-  // بيانات الرسم البياني
   data = {
-    labels: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN','JUL','AUG','SEP','OCT','NOV','DEC'], // أسماء الشهور
+    labels: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN','JUL','AUG','SEP','OCT','NOV','DEC'], 
     datasets: [
       {
         label:'',
-        data: [55, 45, 60, 57, 59, 67,75,102,95,85,89,93,150,120,80,75,85,95], // القيم
-        backgroundColor: '#012D6A', // لون المنطقة
-        borderColor: '#012D6A', // لون الحواف
-        fill: true, // لملء المنطقة تحت الخط
-        pointRadius: 0, // إزالة النقاط
+        data: [55, 45, 60, 57, 59, 67,75,102,95,85,89,93,150,120,80,75,85,95],
+        backgroundColor: '#012D6A', 
+        borderColor: '#012D6A', 
+        fill: true, // 
+        pointRadius: 0, //  
         pointHoverRadius: 0
       }
     ]
   };
 
   barChartData = {
-    labels: ['مساعدة شهرية لكبار السن','غارم','غارم محبوس','ضائقة'], // أسماء الحالات
+    labels: ['مساعدة شهرية لكبار السن','غارم','غارم محبوس','ضائقة'
+    ],  
     datasets: [
       {
-        label: 'المتأخرة', // شريط "المتأخرة" لكل حالة
-        data: [13, 7, 10, 30], // القيم المرتبطة بـ "المتأخرة"
+        label: 'المتأخرة', 
+        data: [13, 7, 10, 30],
         backgroundColor: [
-          '#85BBD8', // نفس لون ضائقة
-          '#BB3837', // نفس لون غارم محبوس
-          '#BFA25D', // نفس لون غارم
-          '#012D6A'  // نفس لون مساعدة شهرية
+          '#85BBD8', 
+          '#BB3837', 
+          '#BFA25D', 
+          '#012D6A'  
         ],
         borderColor: [
           '#85BBD8',
@@ -62,13 +62,13 @@ export class CareComponent {
         barThickness: 20
       },
       {
-        label: 'علي الوقت', // شريط "علي الوقت" لكل حالة
-        data: [25, 15, 30, 120], // القيم المرتبطة بـ "علي الوقت"
+        label: 'علي الوقت', 
+        data: [25, 15, 30, 120], 
         backgroundColor: [
-          '#85BBD8', // لون ضائقة
-          '#BB3837', // لون غارم محبوس
-          '#BFA25D', // لون غارم
-          '#012D6A'  // لون مساعدة شهرية
+          '#85BBD8', 
+          '#BB3837', 
+          '#BFA25D', 
+          '#012D6A'  
         ],
         borderColor: [
           '#85BBD8',
@@ -108,10 +108,10 @@ export class CareComponent {
           },
           y: {
             ticks: {
-              display: false // إخفاء القيم على المحور x
+              display: false 
             },
             grid: {
-              display: false // إخفاء خطوط الشبكة للمحور x (اختياري)
+              display: false 
             }
           }
         }
@@ -133,10 +133,10 @@ export class CareComponent {
           },
           y: {
             ticks: {
-              display: false // إخفاء القيم على المحور x
+              display: false 
             },
             grid: {
-              display: false // إخفاء خطوط الشبكة للمحور x (اختياري)
+              display: false 
             }
           }
         }
@@ -152,24 +152,27 @@ export class CareComponent {
       options: {
         responsive: true,
         plugins: {
+          
           legend: {
-            position: 'top', // وصف الألوان أعلى الرسم
-          }
+            position: 'top', 
+          },
+          
         },
         scales: {
           x: {
             grid: {
-              display: false // إخفاء خطوط الشبكة للمحور x (اختياري)
+              display: false 
             },
-            beginAtZero: true, // بدء المحور X من الصفر
-            stacked: false // فصل الأعمدة ضمن كل مجموعة
+            beginAtZero: true, 
+            stacked: false 
           },
           y: {
             position:'right',
-            beginAtZero: true, // بدء المحور Y من الصفر
+            beginAtZero: true, 
           }
         }
       }
+      
     });
   }
   createDoughnutChart() {
@@ -197,8 +200,8 @@ export class CareComponent {
             position: 'top',
           },
           datalabels: {
-            color: '#fff', // لون النصوص داخل الرسم
-            formatter: (value: number, ctx: any) => value, // عرض القيمة فقط
+            color: '#fff', 
+            formatter: (value: number, ctx: any) => value, 
             font: {
               weight: 'bold',
               size: 30
