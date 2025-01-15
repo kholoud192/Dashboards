@@ -10,6 +10,9 @@ button{
     background-color: #F5F7FA;
     color: #012D6A;
 }
+.font-hlat{
+    font-size: 20px;
+}
 hr{
     width: 130px;
 }
@@ -102,7 +105,7 @@ h3{
     position: absolute;
     width: 202px; 
     height: 202px;
-    background: white; /* اللون الداخلي */
+    background: white; 
     border-radius: 50%;
     font-size: 29px;
     align-items: center;
@@ -154,146 +157,313 @@ h3{
     color: #BB3837;
 }
 
-/* Base styles remain unchanged */
-
-/* iPad screens (768px - 1024px) */
-@media screen and (max-width: 1278px) {
-  
+@media screen and (min-width:438px){
     button {
-      width: 100px;
-      height: 30px;
-      font-size: 11px;
-    }
-  
-    h2 {
-      font-size: 24px;
-    }
-    hr{
-        width: 100px;
-    }
-  
-    h3, .pie-chart-inner, .ontime, .late {
-      font-size: 20px;
-    }
-  
-    p {
-      font-size: 14px;
-    }
-  
-    .pie-chart, .pie-chart-incoming, .pie-chart-remaining, .pie-chart-outgoing, 
-    .pie-chart-interior, .pie-chart-specialization, .pie-chart-radio {
-      width: 140px;
-      height: 140px;
-      margin: 10px auto;
-    }
-  
-    .pie-chart-inner {
-      width: 120px;
-      height: 120px;
-      font-size: 18px;
-    }
-  
-    .pie-chart-total {
-      width: 180px;
-      height: 180px;
-    }
-  
-    .pie-chart-total-inner {
-      width: 160px;
-      height: 160px;
-      font-size: 18px;
-    }
-  }
-  
-  /* iPhone screens (max-width: 767px) */
-@media screen and (max-width: 1018px) {
-    button {
-      width: 90px;
-      height: 28px;
-      font-size: 10px;
-    }
-  
-    h2 {
-      font-size: 20px;
-    }
-  
-    h3, .pie-chart-inner, .ontime, .late {
-      font-size: 16px;
-    }
-    hr{
-        width: 90px;
-    }
-    p {
-      font-size: 12px;
-    }
-  
-    .pie-chart, .pie-chart-incoming, .pie-chart-remaining, .pie-chart-outgoing, 
-    .pie-chart-interior, .pie-chart-specialization, .pie-chart-radio {
-      width: 120px;
-      height: 120px;
-      margin: 8px auto;
-    }
-  
-    .pie-chart-inner {
-      width: 100px;
-      height: 100px;
-      font-size: 16px;
-    }
-  
-    .pie-chart-total {
-      width: 150px;
-      height: 150px;
-    }
-  
-    .pie-chart-total-inner {
-      width: 130px;
-      height: 130px;
-      font-size: 14px;
-    }
-  }
-@media screen and (max-width:430px){
-    button{
-        width: 55px;
-    }
-    .pie-chart ,.pie-chart-incoming,.pie-chart-remaining,.pie-chart-outgoing,.pie-chart-interior,.pie-chart-specialization,
-    .pie-chart-radio{
-        width: 85px;
-        height: 85px;
-        margin: 4px auto;
-    }
-    .pie-chart-inner {
-        width: 65px;
-        height: 65px;
-        font-size: 12px;
-    }
-    .pie-chart-incoming,.pie-chart-outgoing,.pie-chart-interior{
-        width: 55px;
-        height: 55px;
-        margin: 4px auto;
-    }
-    .pie-chart-inner1,.pie-chart-inner2,.pie-chart-inner3 {
-        width: 35px;
-        height: 35px;
-        font-size: 10px;
-    }
-    .pie-chart-total{
-        width: 100.8px; 
-        height: 100.9px;
-    }
-    .pie-chart-total-inner{
-        width: 80.8px; 
-        height: 80.9px;
-        font-size: 12px;
-    }
-    .ontime,.late{
-        font-size: 10px;
-    }
-    hr{
-        width: 50px;
-    }
-    .data{
+        width: 40px;
+        height: 22px;
         font-size: 8px;
-    }
+      }
+    
+      h2 {
+        font-size: 18px;
+      }
+      hr{
+          width: 40px;
+      }
+    
+      h3, .pie-chart-inner, .ontime, .late {
+        font-size: 12px;
+      }
+    
+      p {
+        font-size: 6px;
+      }
+    
+      .pie-chart, .pie-chart-incoming, .pie-chart-remaining, .pie-chart-outgoing, 
+      .pie-chart-interior, .pie-chart-specialization, .pie-chart-radio {
+        width: 60px;
+        height: 60px;
+        margin: 4px auto;
+      }
+      .font-hlat{
+        font-size: 14px;
+      }
+      .pie-chart-inner {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+      }
+      .pie-chart-inner1,.pie-chart-inner2,.pie-chart-inner3 {
+        width: 40px;
+        height: 40px;
+        font-size: 11px;
+      }
+    
+      .pie-chart-total {
+        width: 120px;
+        height: 120px;
+      }
+    
+      .pie-chart-total-inner {
+        width: 100px;
+        height: 100px;
+        font-size: 12px;
+      }
 }
-
+/* @media only screen and (max-width: 600px) {
+    button {
+        width: 60px;
+        height: 25px;
+        font-size: 9px;
+      }
+    
+      h2 {
+        font-size: 20px;
+      }
+      hr{
+          width: 60px;
+      }
+    
+      h3, .pie-chart-inner, .ontime, .late {
+        font-size: 16px;
+      }
+    
+      p {
+        font-size: 10px;
+      }
+    
+      .pie-chart, .pie-chart-incoming, .pie-chart-remaining, .pie-chart-outgoing, 
+      .pie-chart-interior, .pie-chart-specialization, .pie-chart-radio {
+        width: 80px;
+        height: 80px;
+        margin: 6px auto;
+      }
+    
+      .pie-chart-inner {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+      }
+      .pie-chart-inner1,.pie-chart-inner2,.pie-chart-inner3 {
+        width: 60px;
+        height: 60px;
+        font-size: 13px;
+      }
+    
+      .pie-chart-total {
+        width: 140px;
+        height: 140px;
+      }
+    
+      .pie-chart-total-inner {
+        width: 120px;
+        height: 120px;
+        font-size: 14px;
+      }
+  } */
+  
+  @media only screen and (min-width: 600px) {
+    button {
+        width: 60px;
+        height: 25px;
+        font-size: 9px;
+      }
+    
+      h2 {
+        font-size: 20px;
+      }
+      hr{
+          width: 60px;
+      }
+    
+      h3, .pie-chart-inner, .ontime, .late {
+        font-size: 16px;
+      }
+    
+      p {
+        font-size: 10px;
+      }
+      .font-hlat{
+        font-size: 16px;
+      }
+      .pie-chart, .pie-chart-incoming, .pie-chart-remaining, .pie-chart-outgoing, 
+      .pie-chart-interior, .pie-chart-specialization, .pie-chart-radio {
+        width: 80px;
+        height: 80px;
+        margin: 6px auto;
+      }
+    
+      .pie-chart-inner {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+      }
+      .pie-chart-inner1,.pie-chart-inner2,.pie-chart-inner3 {
+        width: 60px;
+        height: 60px;
+        font-size: 13px;
+      }
+    
+      .pie-chart-total {
+        width: 140px;
+        height: 140px;
+      }
+    
+      .pie-chart-total-inner {
+        width: 120px;
+        height: 120px;
+        font-size: 14px;
+      }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    
+    button {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+      }
+      .font-hlat{
+        font-size: 18px;
+      }
+    
+      h2 {
+        font-size: 22px;
+      }
+      hr{
+          width: 80px;
+      }
+    
+      h3, .pie-chart-inner, .ontime, .late {
+        font-size: 18px;
+      }
+    
+      p {
+        font-size: 12px;
+      }
+    
+      .pie-chart, .pie-chart-incoming, .pie-chart-remaining, .pie-chart-outgoing, 
+      .pie-chart-interior, .pie-chart-specialization, .pie-chart-radio {
+        width: 90px;
+        height: 90px;
+        margin: 8px auto;
+      }
+    
+      .pie-chart-inner {
+        width: 70px;
+        height: 70px;
+        font-size: 16px;
+      }
+      .pie-chart-inner1,.pie-chart-inner2,.pie-chart-inner3 {
+        width: 70px;
+        height: 70px;
+        font-size: 15px;
+      }
+    
+      .pie-chart-total {
+        width: 160px;
+        height: 160px;
+      }
+    
+      .pie-chart-total-inner {
+        width: 140px;
+        height: 140px;
+        font-size: 16px;
+      }
+} 
+  
+  @media only screen and (min-width: 992px) {
+    
+    button {
+        width: 100px;
+        height: 30px;
+        font-size: 11px;
+      }
+    
+      h2 {
+        font-size: 24px;
+      }
+      hr{
+          width: 100px;
+      }
+    
+      h3, .pie-chart-inner, .ontime, .late {
+        font-size: 20px;
+      }
+    
+      p {
+        font-size: 14px;
+      }
+    
+      .pie-chart, .pie-chart-incoming, .pie-chart-remaining, .pie-chart-outgoing, 
+      .pie-chart-interior, .pie-chart-specialization, .pie-chart-radio {
+        width: 140px;
+        height: 140px;
+        margin: 10px auto;
+      }
+    
+      .pie-chart-inner {
+        width: 120px;
+        height: 120px;
+        font-size: 18px;
+      }
+    
+      .pie-chart-total {
+        width: 180px;
+        height: 180px;
+      }
+    
+      .pie-chart-total-inner {
+        width: 160px;
+        height: 160px;
+        font-size: 18px;
+      }
+  } 
+  
+  @media only screen and (min-width: 1200px) {
+    button {
+        width: 112px;
+        height: 35px;
+        font-size: 12px;
+      }
+    
+      h2 {
+        font-size: 30px;
+      }
+      hr{
+          width: 130px;
+      }
+    
+      h3, .pie-chart-inner, .ontime, .late {
+        font-size: 30px;
+      }
+    
+      p {
+        font-size: 16px;
+      }
+    
+      .pie-chart, .pie-chart-incoming, .pie-chart-remaining, .pie-chart-outgoing, 
+      .pie-chart-interior, .pie-chart-specialization, .pie-chart-radio {
+        width: 168.5px;
+        height: 168.6px;
+        margin: 20px auto;
+      }
+    
+      .pie-chart-inner {
+        width: 140px;
+        height: 140px;
+        font-size: 29px;
+      }
+    
+      .pie-chart-total {
+        width: 222.8px;
+        height: 222.9px;
+      }
+    
+      .pie-chart-total-inner {
+        width: 202.8px;
+        height: 202.9px;
+      }
+  
+}
   

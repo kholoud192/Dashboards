@@ -28,34 +28,51 @@ input::placeholder{
     color: white;
 
 }
-@media screen and (max-width:1022px){
+
+
+@media only screen and (min-width: 438px) {
     .search{
-        width: 450.8px;
-        height: 50.6px;  
+        width: 160.8px;
+        height: 40.6px;  
     }
     h1{
-        font-size: 25px;
+        font-size: 8px;
     }
-}
-@media screen and (max-width:886px){
+    .image img{
+        width: 700px;
+        height: 85px;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
     .search{
-        width: 250.8px;
-        height: 50.6px;  
-    }
-    h1{
-        font-size: 18px;
-    }
-}
-@media screen and (max-width:430px){
-    .search{
-        width: 120.8px;
+        width: 230.8px;
         height: 40.6px;  
     }
     h1{
         font-size: 12px;
     }
+  }
+  @media only screen and (min-width: 992px) {
+    h1{
+        font-size: 32px;
+        font-weight: bold;
+    }
     .image img{
-        width: 500px;
+        width: 279px;
         height: 85px;
     }
-}
+    .search{
+        border-radius: 10px;
+        border: 1px white solid;
+        width: 583.8px;
+        height: 54.6px;  
+    }
+
+  }
+
+
+  
+
+  
+
