@@ -99,7 +99,8 @@ export class CareComponent {
         responsive: true,
         plugins: {
           legend: {
-            position: 'top'
+            position: 'top',
+            display: false,
           }
         },
         scales: {
@@ -124,7 +125,8 @@ export class CareComponent {
         responsive: true,
         plugins: {
           legend: {
-            position: 'top'
+            position: 'top',
+            display: false,
           }
         },
         scales: {
