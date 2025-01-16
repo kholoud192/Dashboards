@@ -32,7 +32,7 @@ h3{
 .pie-chart-total {
     position: relative;
     width: 222.8px; 
-    height: 222.9px;
+    height: fit-content;
     border-radius:100%;
     border: white 5px solid;
     background: conic-gradient(
