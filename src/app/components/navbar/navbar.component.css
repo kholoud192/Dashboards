@@ -11,12 +11,7 @@ h1{
     width: 279px;
     height: 85px;
 }
-.search{
-    border-radius: 10px;
-    border: 1px white solid;
-    width: 583.8px;
-    height: 54.6px;  
-}
+
 input::placeholder{
     padding: 3%;
 }
@@ -28,7 +23,29 @@ input::placeholder{
     color: white;
 
 }
-
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 30px; 
+    color: #888;
+    font-size: 18px;
+    pointer-events: none; 
+  }
+  
 
 @media only screen and (min-width: 438px) {
     .search{
