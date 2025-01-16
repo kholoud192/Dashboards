@@ -212,7 +212,8 @@ export class CareComponent {
             formatter: (value: number, ctx: any) => value, 
             font: {
               weight: 'bold',
-              size: 30
+              size: window.innerWidth < 526 ? 12 : window.innerWidth < 990 ? 16 : 20, 
+                
             },
             textAlign: 'center'
           }
