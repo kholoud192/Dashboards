@@ -45,6 +45,13 @@ h3{
     justify-content: center;
     margin: 20px auto;
 }
+.chart-container {
+  position: relative;
+  width: 100%; 
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
 .pie-chart-total-inner {
     position: absolute;
     width: 202px; 
@@ -219,7 +226,8 @@ h2{
         height: 20px;
         font-size: 9px;
       }
-    
+      
+      
       h2 {
         font-size: 14px;
       }
@@ -429,6 +437,7 @@ h2{
         width: 305px;
         height: 8px;
     }
+
     .progress2{
         width: 188.2px;
         height: 8px;

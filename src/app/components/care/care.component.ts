@@ -29,7 +29,7 @@ export class CareComponent {
     datasets: [
       {
         label:'',
-        data: [55, 45, 60, 57, 59, 67,75,102,95,85,89,93,150,120,80,75,85,95],
+        data: [90, 80, 90, 120,120,102,95,90,99,93,190,180,80,75,85,95],
         backgroundColor: '#012D6A', 
         borderColor: '#012D6A', 
         fill: true, // 
@@ -146,7 +146,6 @@ export class CareComponent {
     });
 
   }
-
   createBarChart() {
     this.chart = new Chart('myBarChart', {
       type: 'bar',
@@ -154,29 +153,36 @@ export class CareComponent {
       options: {
         responsive: true,
         plugins: {
-          
           legend: {
-            position: 'top', 
-          },
-          
+            position: 'top',
+          }
         },
         scales: {
           x: {
             grid: {
-              display: false 
+              display: false
             },
-            beginAtZero: true, 
-            stacked: false 
+            ticks: {
+              font: {
+                size: window.innerWidth < 526 ? 4 : window.innerWidth < 990 ? 6 : 10, 
+              }
+            }
           },
           y: {
-            position:'right',
-            beginAtZero: true, 
+            position: 'right',
+            beginAtZero: true,
+            ticks: {
+              font: {
+                size: 12 
+              }
           }
         }
-      }
+      },
       
+    }
     });
   }
+  
   createDoughnutChart() {
     Chart.register(ChartDataLabels);
     this.chart = new Chart('popupDoughnutChart', {
